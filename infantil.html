@@ -6,6 +6,9 @@
     <title>SONOMEU</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -15,20 +18,42 @@
             height: 300xp;
             font-family: arial;
             color:#9db8d1;
-             }
+        }
+        #dif{
+            text-align:left
+        }
+        
+        button{
+            background-color: #ffffff; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: right;
+            align-items: right;
+            text-decoration: none;
+            display: inline-block;
+        }
         nav{
             width: 10xp;
             height: 5xp;
             background-color:#9db8d1;
             font-size: 3px;
         }
+        #infantil{
+            width: 85;
+            height: 20xp;
+            color:#fbe3e9 ;
+            background-color:#9db8d1;
+            font-size: 30px;
+            text-align: center
+        }
         #links{
             float: left;
-            width: 15%;
+            width: 20%;
             height: 500px;
+            padding: 20px;
             background:#fbe3e9;
             color:#9db8d1;
-            padding: 20px;
             font-size: 20px;
         }
         a{
@@ -50,11 +75,20 @@
         }
 
         .content {
-            margin-left: 220px; /* Espaço para o sidebar */
+            margin-left: 220px;
             padding: 1em;
             flex: 1;
         }
-
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }   
+        article {
+            float:left;
+            padding: 20px;
+            width: 80%; 
+        }
         footer {
             background-color: #9db8d1;
             color: #fff;
@@ -64,39 +98,57 @@
             bottom: 0;
             width: 100%;
         }
-    img{
-       width: 25xp;
-       height: 50xp;
+        @media (max-width: 600px) {
+            #links, article {
+                width: 100%;
+                height: auto;
+            }
         }
-
     </style>
 </head>
 <body>
     <header>
-        <p id="tit"><h1>SONOMEU</h1></p>
+    <p id="tit">
+        <div class=>
+            <h1 id="dif">SONOMEU</h1>
+                <button align-itens="right">
+                    <img src="C:\Users\anaca\Downloads\SonoMeu-main\3.png" width="50" height="50" text-align= 'right'>
+                    <a></a>
+                </button>
+                <button>
+                    <img src="C:\Users\anaca\Downloads\SonoMeu-main\2.png" width="50" height="50" text-align= 'right'>
+                    <a></a>
+                </button>
+                <button>
+                    <img src="C:\Users\anaca\Downloads\SonoMeu-main\1.png" width="50" height="50" text-align= 'right'>
+                    <a></a>
+                </button>
+        </div>
+    </p>
     </header>
     <nav>ﾠ</nav>
+    <nav id="infantil">INFANTIL</nav>
     <div class="container">
+    <section>
         <nav id="links">
-            <br><br>
-            <a href="file:///C:/Users/Aluno/SonoMeu/masculino.html">masculino</a>
+            <a href="file:///C:/Users/anaca/Downloads/SonoMeu-main/interface.HTML">inicio</a>
             <br><br><br><br>
-            <a href="file:///C:/Users/Aluno/SonoMeu/feminino.html">feminino</a>
+            <a href="C:\Users\anaca\Downloads\SonoMeu-main\masculino.html">masculino</a>
             <br><br><br><br>
-            <a href="file:///C:/Users/Aluno/SonoMeu/infantil.html">infantil</a>
+            <a href="C:\Users\anaca\Downloads\SonoMeu-main\feminino.html">feminino</a>
             <br><br><br><br>
-            <a href="file:///C:/Users/Aluno/SonoMeu/plus-size.html">Plus-size</a>
-          </nav>
-        <main class="content">
-            <article>
-                
-            </article>
-        </main>
-        <footer class="footer">
-            <div>
-                <img src="C:\Users\Aluno\Downloads\FE13239C-3CBE-41EB-8024-CA7871E3F2F6_L0_001-01_08_2024, 14_40_42.png" width="100" height="100" text-align:right />
-            </div>
-        </footer>
+            <a href="C:\Users\anaca\Downloads\SonoMeu-main\plus-size.html">Plus-size</a>
+        </nav>
+        <article>
+            oiii
+        </article>
+    </section>
+    <br><br><br><br><br>
+    <footer class="footer">
+        <div>
+            <img src="C:\Users\anaca\Downloads\SonoMeu-main\FE13239C-3CBE-41EB-8024-CA7871E3F2F6_L0_001-01_08_2024, 14_40_42.png" width="100" height="100" text-align:right />
+        </div>
+    </footer>
     </div>
 </body>
 </html>
